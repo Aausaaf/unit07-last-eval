@@ -65,24 +65,24 @@ async function updataPost(req,res,next) {
 async function deletepost(req,res,next)
 {
     let {id} = req.params
-    const {user} = req.context
-    if(!user)
-    {
-        return res.status(400).send({
-            error:"Login to delete your post"
-        })
-    }
+//     const {user} = req.context
+//     if(!user)
+//     {
+//         return res.status(400).send({
+//             error:"Login to delete your post"
+//         })
+//     }
 
-    const post =   await Post.findById(id)
-   //
-   // console.log(id)
-  if(post.user.toString() !== user._id.toString())
-  {
-    console.log(post.user.toString())
-    console.log(user._id.toString())
-    return res.status(401).send({
-        error:"you can not delete"})
-  }
+//     const post =   await Post.findById(id)
+//    //
+//    // console.log(id)
+//   if(post.user.toString() !== user._id.toString())
+//   {
+//     console.log(post.user.toString())
+//     console.log(user._id.toString())
+//     return res.status(401).send({
+//         error:"you can not delete"})
+//   }
    await Post.findByIdAndDelete(id)
     return res.send({
         message : "Post hase been Delete"
