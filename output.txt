@@ -1,1 +1,2 @@
 https://drive.google.com/file/d/1vEDgiDSk_P_RM_EtZxltMW3lnH4MMwre/view?usp=drivesdk
+netlify link: https://scintillating-mermaid-20d0fa.netlify.app/ (only fronted hosted)
