@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const postSchema = new mongoose.Schema({
+const notesSchema = new mongoose.Schema({
     title:String,
     note:String,
     label:String,
@@ -15,6 +15,6 @@ const postSchema = new mongoose.Schema({
     timestamps:true
 })
 
-const Post = mongoose.model('notes',postSchema)
+const Post = mongoose.model('notes',notesSchema)
 
 module.exports = Post

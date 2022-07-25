@@ -1,4 +1,4 @@
-const Post = require('../database/post')
+const Post = require('../database/notes')
 const Commnet = require("../database/comment")
 async function getallpost(req,res,next)
 {
